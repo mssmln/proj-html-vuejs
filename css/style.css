@@ -9,12 +9,35 @@
   background-color: red;
   margin: 0 auto;
   height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* header */
 header{
   background-color: #0088cc;
-  height: 100px;
+  padding: 14px;
 }
+
+header ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header ul li:first-child{
+  text-transform: none;
+  margin-left: 0;
+  font-size: 11px;
+}
+
+header ul li{
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 10px;
+  font-size: 12px;
+}
+/* /header */
+
 
 /* logo */
 #logo{
@@ -32,3 +55,11 @@ header{
 }
 
 /* /menu */
+
+
+/* photos */
+#photos{
+  background-color: #f7f7f7;
+  height: 100px;
+}
+/* /photos */

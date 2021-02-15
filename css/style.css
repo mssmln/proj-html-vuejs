@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 1400px;
+  background-color: red;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+header{
+  background-color: #0088cc;
+  height: 100px;
+}
+
+/* logo */
+#logo{
+  background-color: pink;
+  height: 100px;
+}
+/* /logo */
+
+
+
+/* menu */
+#menu{
+  background-color: blue;
+  height: 100px;
+}
+
+/* /menu */

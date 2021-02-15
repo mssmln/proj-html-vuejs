@@ -49,9 +49,9 @@
         <div class="box" v-for="i in 6">
           <div class="photo">
             <img :src="'blog/images/' + photos + i++ + '.jpg'">
-            <span class="text">
-              <div class="tag">
-                ciao
+            <span class="text" v-for="i in 6">
+              <div class="tag" >
+                {{ imgTag[i] }}
               </div>
               <h4>
                 How

@@ -15,13 +15,15 @@
 /* header */
 header{
   background-color: #0088cc;
-  padding: 14px;
+  height: 50px;
+  /* padding: 14px; */
 }
 
 header ul{
   list-style: none;
   display: flex;
   align-items: center;
+  line-height: 50px;
 }
 
 header ul li:first-child{
@@ -35,14 +37,18 @@ header ul li{
   text-transform: uppercase;
   margin: 0 10px;
   font-size: 12px;
+  cursor: pointer;
 }
 /* /header */
 
 
 /* logo */
 #logo{
-  background-color: pink;
-  height: 100px;
+  padding: 35px 0;
+}
+
+#logo img{
+  width: 100px;
 }
 /* /logo */
 
@@ -50,8 +56,36 @@ header ul li{
 
 /* menu */
 #menu{
-  background-color: blue;
-  height: 100px;
+  background-color: #ffffff;
+  padding: 18px 0;
+  border-top: 1px solid #eeeeee;
+}
+
+#menu ul{
+  list-style: none;
+  text-transform: uppercase;
+  display: flex;
+}
+
+#menu ul li{
+  margin-right: 45px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #212529;
+  cursor: pointer;
+}
+
+#menu ul li:nth-child(8n-1){
+  flex-grow: 1;
+}
+
+#menu ul li:last-child{
+  margin-right: 0;
+}
+
+#menu ul li:hover,
+#menu ul li:visited{
+  color: #0088cc;
 }
 
 /* /menu */
@@ -60,6 +94,34 @@ header ul li{
 /* photos */
 #photos{
   background-color: #f7f7f7;
-  height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 35px 0;
+}
+
+#photos .box{
+  margin: 15px 0;
+}
+
+#photos .box .photo{
+  display: flex;
+  position: relative;
+}
+
+.box .photo span{
+  position: absolute;
+  left: 0;
+}
+
+#photos img{
+  width: 445px;
 }
 /* /photos */
+
+
+/* posts */
+#posts{
+  height: 300px;
+  background-color: green;
+}

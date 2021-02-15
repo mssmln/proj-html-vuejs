@@ -22,30 +22,48 @@
           {{ navbar }}
         </li>
       </ul>
-
     </header>
 
     <main>
       <!-- logo -->
       <section id="logo">
-
+        <img src="blog/images/logo-default-slim.png" alt="logo">
       </section>
       <!-- /logo -->
 
       <!-- menu -->
       <section id="menu">
-
+        <ul>
+          <li v-for="menu in mainMenu">
+            {{ menu }}
+          </li>
+          <li>
+            <i class="fas fa-search"></i>
+          </li>
+        </ul>
       </section>
       <!-- /menu -->
 
       <!-- photo -->
       <section id="photos">
-
+        <div class="box" v-for="i in 6">
+          <div class="photo">
+            <img :src="'blog/images/' + photos + i++ + '.jpg'">
+            <span class="text">
+              <div class="tag">
+                ciao
+              </div>
+              <h4>
+                How
+              </h4>
+            </span>
+          </div>
+        </div>
       </section>
       <!-- /photo -->
 
       <!-- posts -->
-      <section>
+      <section id="posts">
 
       </section>
       <!-- /posts -->

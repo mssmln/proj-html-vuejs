@@ -141,7 +141,8 @@ header ul li{
 }
 
 #posts .post h3,
-#posts .featured h3{
+#posts .featured h3,
+#articles .right h3{
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -163,7 +164,8 @@ header ul li{
   font-size: 11px;
 }
 
-#posts .post ul{
+#posts .post ul,
+#articles .left .remarks ul{
   list-style: none;
 }
 
@@ -301,9 +303,205 @@ header ul li{
 
 /* articles */
 #articles{
-  background-color: red;
+  display: flex;
+}
+
+/* left */
+#articles .left{
+  width: 75%;
+}
+
+#articles .about{
+  display: flex;
+}
+
+#articles .left img.individual{
+  width: 100%;
+  display: flex;
+  padding-top: 60px;
+}
+
+#articles .left .multi-img{
+  padding-top: 60px;
+}
+
+#articles .left .multi-img .frame,
+#articles .right .multi-img .frame{
+  display: flex;
+}
+
+#articles .left .multi-img .frame img,
+#articles .right .multi-img .frame img{
+  width: 100%;
+}
+
+#articles .left .calendar .date{
+  text-align: center;
+  margin-top: 25px;
+  margin-right: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px;
+  color: #000000;
+  background-color: #f7f7f7;
+}
+
+#articles .left .calendar .month{
+  margin-right: 25px;
+  font-size: 11px;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#articles .left .description{
+}
+
+#articles .left .description h2{
+  margin: 25px 0 13px 0;
+}
+
+#articles .left .description p,
+#articles .right .box .tweet p{
+  font-size: 15px;
+  color: #999896;
+}
+
+#articles .left .remarks ul{
+  display: flex;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#articles .left .remarks li:nth-last-child(2){
+  flex-grow: 1;
+}
+
+#articles .left .remarks li:first-child::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f007';
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#articles .left .remarks li:nth-child(2)::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f07b';
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+#articles .left .remarks li:nth-last-child(2)::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: '\f086';
+  display: inline-block;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+#articles .left .remarks li:last-child a{
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+  color: #999896;
+  border: 1px solid #999896;
+}
+
+#articles .left .remarks ul li{
+  margin: 20px 10px 0 0;
+  font-size: 14px;
+  color: #999896;
+}
+
+#articles .left .remarks ul li a{
+  text-decoration: none;
+  text-transform: capitalize;
+  vertical-align: middle;
+  color: #0088cc;
+}
+
+/* /left */
+
+/* right */
+#articles .right{
+  /* background-color: purple; */
+  width: 25%;
+  margin-left: 30px;
+}
+
+#articles .right .box{
+  display: flex;
+  margin-top: 25px;
+}
+
+#articles .right .box i{
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+#articles .right .box .tweet small{
+  color: #0088cc;
+}
+
+#articles .right h3:first-child{
+  padding-top: 60px;
+  margin-bottom: 15px;
+}
+
+#articles .right .box + h3{ /* seleziona il primo h3 subito dopo la classe box */
+  padding-top: 35px;
+  margin-bottom: 12px;
+}
+
+#articles .right .multi-img + h3{
+  margin-top: 22px;
+}
+
+#articles .right .tags + h3{
+  padding-top: 100px;
+}
+
+#articles .right .tags{
+  display: flex;
+  margin-top: 10px;
+}
+
+#articles .right .tags .tag{
+  margin-right: 5px;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-weight: 700;
+  text-align: center;
+  /* width: 100%; */
+}
+
+#articles .right .theme{
+  padding: 7px 7px 7px 13px;
+  font-size: 14px;
+  margin-top: 15px;
+  border-left: 5px solid #eeeeee;
+  color: #0088cc;
+}
+
+
+
+/* /right */
+/* /articles */
+
+
+/* get in touch */
+#get-in-touch{
+  background-color: pink;
   height: 300px;
 }
 
 
-/* /articles */
+/* /get in touch */

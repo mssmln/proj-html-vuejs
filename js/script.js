@@ -6,6 +6,7 @@ var app = new Vue ({
     photos: 'blog-4',
     slider: ['photography','gadgets','travel','lifestyle','travel','recipes','fashion'],
     imgHeadline: ['How To Take Better Concert Pictures in 30 Seconds','Gadgets That Make Your Smartphone Even Smarter','20 Top-Rated Tourist Attractions in Manhattan','The Best Way to Ride a Motorcycle','5 Fun Things to Do at the Beach','Amazingly Fresh Fruit And Herb Drinks For Summer'],
+    tags: ['design','brands','video','business','travel'],
     footer: ['FAQs','Sitemap','Contact us']
   },
 });

@@ -1,3 +1,9 @@
+// window.scroll({
+//   top: 0,
+//   left: 0,
+//   behavior: 'smooth'
+// });
+
 var app = new Vue ({
   el: '#app',
   data: {

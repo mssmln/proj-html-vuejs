@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  position: relative;
+}
+
 .container{
   width: 1400px;
   /* background-color: red; */
@@ -669,10 +677,68 @@ header ul li{
 
 
 /* footer */
+.bgc-footer{
+  background-color: #1c2023;
+}
+
 footer{
   background-color: #1c2023;
-  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+footer .logo-footer{
+  color: #8c8e8f;
+}
+
+footer img{
+  width: 75px;
+  margin: 30px 50px 30px 0;
+  vertical-align: middle;
+}
+
+footer small{
+  flex-grow: 1;
+  color: #555555;
+  font-size: 11px;
+}
+
+
+footer .navbar-down ul{
+  list-style: none;
+  display: flex;
+  font-size: 11px;
+  color: #777777;
+}
+
+footer .navbar-down ul li.entries{
+  margin-left: 20px;
+}
+
+footer .navbar-down ul li.entries::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f054';
+  vertical-align: middle;
+  margin-right: 5px;
 }
 
 
 /* /footer */
+
+
+/* freccia torna su */
+.top{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  cursor: pointer;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 12px;
+  color: #ffffff;
+  background-color: #373839;
+}
+
+/* /freccia torna su */

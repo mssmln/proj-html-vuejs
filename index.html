@@ -13,6 +13,7 @@
   <title>blog con Vue</title>
 </head>
 <body>
+  <a id="top"></a>
   <div id="app">
     <div class="bgc-header">
       <header class="container">
@@ -617,12 +618,33 @@
       <!-- /get in touch -->
     </main>
 
+    <div class="bgc-footer">
+      <footer class="container">
+        <div class="logo-footer">
+          <img src="blog/images/logo-footer.png" alt="logo-footer">
 
-    <footer>
+        </div>
+        <small>&copy; Copyright 2020. All Rights Reserved.</small>
 
-    </footer>
+        <div class="navbar-down">
+          <ul>
+            <li v-for="menu in footer" class="entries">
+              {{ menu }}
+            </li>
+          </ul>
+        </div>
 
+      </footer>
+
+    </div>
+    <!-- freccia per tornare su -->
+    <a href="#top" class="top">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- /freccia per tornare su -->
   </div>
+
+
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

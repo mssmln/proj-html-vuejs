@@ -56,11 +56,10 @@
           <div class="box" v-for="i in 6">
             <div class="photo">
               <img :src="'blog/images/' + photos + i++ + '.jpg'">
-              <span class="text" v-for="i in 6">
-                <div class="tag" >
+              <span class="text">
+                <div class="tag">
                 </div>
                 <h4>
-                  How
                 </h4>
               </span>
             </div>
@@ -240,11 +239,11 @@
       <!-- slider -->
       <div class="bgc-slider">
         <section id="slider" class="container">
-          <i class="fas fa-chevron-left arrow left"></i>
+          <i class="fas fa-chevron-left arrow left" @click="prev"></i>
           <div class="links" v-for="elemento in slider">
             {{ elemento }}
           </div>
-          <i class="fas fa-chevron-right arrow right"></i>
+          <i class="fas fa-chevron-right arrow right" @click="next"></i>
         </section>
       </div>
       <!-- /slider -->
@@ -618,14 +617,16 @@
       <!-- /get in touch -->
     </main>
 
+
+    <!-- footer -->
     <div class="bgc-footer">
       <footer class="container">
         <div class="logo-footer">
           <img src="blog/images/logo-footer.png" alt="logo-footer">
-
         </div>
-        <small>&copy; Copyright 2020. All Rights Reserved.</small>
-
+        <small>
+          &copy; Copyright 2020. All Rights Reserved.
+        </small>
         <div class="navbar-down">
           <ul>
             <li v-for="menu in footer" class="entries">
@@ -633,10 +634,11 @@
             </li>
           </ul>
         </div>
-
       </footer>
-
     </div>
+    <!-- /footer -->
+
+
     <!-- freccia per tornare su -->
     <a href="#top" class="top">
       <i class="fas fa-chevron-up"></i>

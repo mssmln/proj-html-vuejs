@@ -19,12 +19,17 @@ var app = new Vue ({
   },
   mounted(){
     this.arrConcatenato = this.joinArray(this.slider,this.categories);
-    console.log(this.arrConcatenato);
+    // console.log(this.arrConcatenato);
   },
   methods: {
     joinArray(arr1,arr2){
       let newArr = arr1.concat(arr2);
       return newArr;
     },
+    prev(){
+    },
+    next(){
+
+    }
   }
 });

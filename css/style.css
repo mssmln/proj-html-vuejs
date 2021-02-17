@@ -332,7 +332,8 @@ header ul li{
 
 #articles .left .multi-img .frame img,
 #articles .right .multi-img .frame img{
-  width: 100%;
+  /* width: 100%; */ /* funzionava solo con firefox developer edition */
+  width: calc(100% / 3);
 }
 
 #articles .left .calendar .date{
@@ -424,11 +425,41 @@ header ul li{
   color: #0088cc;
 }
 
+/* pages */
+#articles .left .pages{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#articles .left .pages .page{
+  margin: 40px 0 70px 0;
+  font-size: 14px;
+  width: 35px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  color: #0088cc;
+}
+
+#articles .left .pages .page:hover{
+  background-color: #0088cc;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+#articles .left .pages i.page{
+  font-size: 11px;
+}
+
+/* /pages */
 /* /left */
+
+
 
 /* right */
 #articles .right{
-  /* background-color: purple; */
   width: 25%;
   margin-left: 30px;
 }
@@ -498,10 +529,150 @@ header ul li{
 
 
 /* get in touch */
+.bgc-get-in-touch{
+  background-color: #212529;
+}
+
 #get-in-touch{
-  background-color: pink;
-  height: 300px;
+  background-color: #212529;
+  display: flex;
+  position: relative;
+}
+
+#get-in-touch .ribbon{
+  font-family: 'Shadows Into Light', cursive;
+  position: absolute;
+  top: -15px;
+  padding: 5px 17px;
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #0088cc;
+}
+
+#get-in-touch .ribbon::before{ /* suggeritomi da Giacomo */
+  content: '';
+  position: absolute;
+  height: 0;
+  top: 0;
+  width: 7px;
+  right: 100%;
+  display: block;
+  border-right: 10px solid #005580;
+  border-top: 16px solid transparent;
+}
+
+#get-in-touch .box{
+  width: calc(100% / 4);
+  margin-bottom: 110px;
+  margin-right: 50px; /* non sono completamente soddisfatto di come appaia rispetto allo screen del designer */
+}
+
+#get-in-touch .box h4{
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 70px 0 20px 0;
+  color: #ffffff;
+}
+
+#get-in-touch .box p{
+  color: #777777;
+  font-size: 13px;
+}
+
+#get-in-touch .box p[title~=second-p]{
+  margin-top: 30px;
+}
+
+#get-in-touch .box div[title~=view]{
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+#get-in-touch .box div[title~=view]::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f054';
+  /* display: inline-block; */
+  margin-left: 5px;
+  font-size: 11px;
+  vertical-align: middle;
+}
+
+#get-in-touch .box .recent{
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#get-in-touch .box .recent .img img{
+  border-radius: 50%;
+  width: 70px;
+  margin-right: 23px;
+}
+
+#get-in-touch .box .recent .text p,
+#get-in-touch .box .comment p{
+  color: #ffffff;
+}
+
+#get-in-touch .box .recent .text small,
+#get-in-touch .box .comment small{
+  font-size: 11px;
+  color: #777777;
+}
+
+#get-in-touch .box .comment{
+  margin-bottom: 25px;
+}
+
+#get-in-touch .box .comment p span[title~=name]{
+  text-transform: capitalize;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#get-in-touch .box .comment p span[title~=message]{
+  color: #0088cc;
+}
+
+#get-in-touch .box .comment p span[title~=name]::before{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f054';
+  font-size: 11px;
+  vertical-align: middle;
+  margin-right: 8px;
+  color: #0088cc;
+}
+
+#get-in-touch .box .categories{
+
+}
+
+#get-in-touch .box .categories .category{
+  float: left;
+  margin: 0 10px 10px 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #0a0c0d;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 
 /* /get in touch */
+
+
+/* footer */
+footer{
+  background-color: #1c2023;
+  height: 300px;
+}
+
+
+/* /footer */

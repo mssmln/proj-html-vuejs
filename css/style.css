@@ -192,7 +192,8 @@ header ul li{
   margin-right: 30px;
 }
 
-#posts .featured .box{
+#posts .featured .box,
+#photos .box{
   position: relative;
 }
 
@@ -201,41 +202,47 @@ header ul li{
   margin: 30px 0 20px 0;
 }
 
-#posts .featured .box:hover img{
+#posts .featured .box:hover img,
+#photos .box:hover img{
   filter: grayscale(80%);
 }
 
 
-#posts .featured .box .testo{
+#posts .featured .box .testo,
+#photos .box span.text{
   position: absolute;
   bottom: 0;
   margin: 0 0 20px 20px;
   display: none;
 }
 
-#posts .featured .box:hover .testo{
+#posts .featured .box:hover .testo,
+#photos .box:hover span.text{
   display: block;
 }
 
 
-#posts .featured .box .testo .tag{
+#posts .featured .box .testo .tag,
+#photos .box span.text .tag{
   text-transform: uppercase;
   color: #ffffff;
   background-color: #0074ad;
-  width: 60px;
+  width: 100px;
   text-align: center;
   font-size: 12px;
   font-weight: bold;
   padding: 3px;
 }
 
-#posts .featured .box .testo h2{
+#posts .featured .box .testo h2,
+#photos .box span.text h4{
   font-size: 20px;
   margin: 5px 0 25px 0;
   color: #ffffff;
 }
 
-#posts .featured .box .testo h2:hover{
+#posts .featured .box .testo h2:hover,
+#photos .box span.text h4:hover{
   cursor: pointer;
 }
 
@@ -304,6 +311,11 @@ header ul li{
   font-size: 13px;
   width: 200px;
   text-align: center;
+  transition: all 1s;
+}
+
+#slider .links:hover{
+  transform: scale(1.3);
 }
 
 /* /slider */

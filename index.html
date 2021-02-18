@@ -53,13 +53,15 @@
       <!-- photo -->
       <div class="bgc-photo">
         <section id="photos" class="container">
-          <div class="box" v-for="i in 6">
+          <div class="box" v-for="(elemento,i) in seiFoto">
             <div class="photo">
               <img :src="'blog/images/' + photos + i++ + '.jpg'">
               <span class="text">
                 <div class="tag">
+                  {{ elemento.tag }}
                 </div>
                 <h4>
+                  {{ elemento.title }}
                 </h4>
               </span>
             </div>
@@ -405,7 +407,7 @@
             <div class="frame">
               <img src="blog/images/blog-23.jpg">
               <img src="blog/images/blog-29.jpg">
-              <img src="blog/images/blog-40.jpg">
+              <img src="blog/images/blog-99.jpg">
             </div>
           </div>
           <div class="about">

@@ -41,6 +41,7 @@ header ul li:first-child{
   text-transform: none;
   margin-left: 0;
   font-size: 11px;
+  cursor: text;
 }
 
 header ul li{
@@ -85,8 +86,11 @@ header ul li{
   margin-right: 45px;
   font-weight: 600;
   font-size: 14px;
+}
+
+#menu ul li a{
+  text-decoration: none;
   color: #212529;
-  cursor: pointer;
 }
 
 #menu ul li:nth-child(8n-1){
@@ -97,8 +101,8 @@ header ul li{
   margin-right: 0;
 }
 
-#menu ul li:hover,
-#menu ul li:visited{
+#menu ul li a:hover,
+#menu ul li a:active{
   color: #0088cc;
 }
 
@@ -242,7 +246,10 @@ header ul li{
 }
 
 #posts .featured .box .testo h2:hover,
-#photos .box span.text h4:hover{
+#photos .box span.text h4:hover,
+#menu ul li i,
+#posts .post .preview p,
+footer .navbar-down ul li.entries{
   cursor: pointer;
 }
 
@@ -354,6 +361,12 @@ header ul li{
 #articles .right .multi-img .frame img{
   /* width: 100%; */ /* funzionava solo con firefox developer edition */
   width: calc(100% / 3);
+  transition: all 1s;
+}
+
+#articles .left .multi-img .frame img:hover,
+#articles .right .multi-img .frame img:hover{
+  transform: scale(1.3);
 }
 
 #articles .left .calendar .date{
@@ -492,6 +505,15 @@ header ul li{
 #articles .right .box i{
   font-size: 20px;
   margin-right: 12px;
+}
+
+#articles .right .box i:hover{
+  animation: rotating 1s linear;
+}
+
+@keyframes rotating{
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
 }
 
 #articles .right .box .tweet small{
